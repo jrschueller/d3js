@@ -1,4 +1,4 @@
-import { range } from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import { range } from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
 
 export function makeData(n, t){
     const data = range(n).map((d) => ({
