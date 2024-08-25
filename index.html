@@ -9,12 +9,63 @@
         overflow: hidden;
       }
     </style>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <script type="module" src='./script/index.js'></script>
+    <script type="module" src="./script/index.js"></script>
     <h1>this is a header</h1>
+    <script>
+      const range = (n) => {
+        const array = [];
+        for (let i = 0; i < n; i++) {
+          array.push(i);
+        }
+        return array;
+      };
+
+      const myRange = range(10);
+
+      const sortable = [4, 3, 6, 2, 2, 8, 20, "g"];
+
+      // myRange.forEach((d) => {
+      //   console.log(d);
+      // });
+
+      // console.log(myRange.filter(d => d % 2 === 0));
+      // console.log(myRange.sort().reverse());
+      // console.log(myRange.sort((a, b) => (b < a ? -1 : b > 1 ? 1 : 0)));
+      // console.log(sortable.sort((a, b) => (b < a ? -1 : b > 1 ? 1 : 0)));
+
+      console.log(myRange.map((d) => ({ number: d, square: d ** 2 })));
+
+      console.log(
+        myRange.reduce((accumulator, d) => {
+          console.log('adding the accumulator (' + accumulator + ') to d (' + d + ') which = ' + (accumulator + d));
+          return accumulator + d;
+        })
+      );
+
+      const entries = [
+        {key: 'A', value: 'foo'},
+        {key: 'C', value: 'baz'},
+        {key: 'B', value: 'bar'},
+      ];
+
+      console.log(entries.sort((a, b) => a.key < b.key ? -1 : 1));
+
+      // // how do we get here?
+      // const result = {
+      //   A: 'foo',
+      //   B: 'bar'
+      // };
+
+      console.log(entries.reduce((accumulator, d) => {
+        accumulator[d.key] = d.value;
+        return accumulator;
+      }, {}));
+
+    </script>
   </body>
 </html>

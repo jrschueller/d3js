@@ -91,3 +91,4 @@ const renderMask = (selection, id, inverted) => {
 svg.call(renderMask, "mask-1", false).call(renderMask, "mask-2", true);
 
 console.log('hello world');
+console.log(entries.sort((a, b) => d3.ascending(a.key, b.key)));
