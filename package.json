@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "d3": "6.6.1"
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "rollup": "latest"
   }
 }

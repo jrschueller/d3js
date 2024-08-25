@@ -1,0 +1,4 @@
+**.prettierrc
+**.code-workspace
+/node_modules/
+/d3.min/
