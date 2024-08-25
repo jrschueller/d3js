@@ -1,3 +1,3 @@
 # d3js
 
-A reproduction of a [Sol LeWitt](https://en.wikipedia.org/wiki/Sol_LeWitt) art piece with D3.
+Following the freeCodeCamp "Get it Right in Black and White" course on D3
